@@ -8,7 +8,7 @@ The way variables are resolved is very different from GML and more akin to actua
 
 A scope is essentially a block of code that can "see" only what's inside of, and above it.
 
-** A good rule of thumb is that a scope's boundaries are formed by `{` and `}`. **
+**A good rule of thumb is that a scope's boundaries are formed by `{` and `}`.**
 ##### Example
 ```js
 // This is the highest visible scope, the mod scope.
