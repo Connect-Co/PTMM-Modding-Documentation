@@ -57,3 +57,39 @@ However, no waiting occurs, they get sent at the speed of the network.
 > UDP packets **can be used for mass-information that can be lost, or arrive out of order**. Useful for sending player position packets that arrive in bulk, if one of them gets lost, another one will arrive soon enough to replace it.
 
 # RPC
+> **They're functions that can be called through the network**, which subsequently makes them extremely useful and gives them a wide range of use-cases, this is why it's useful to know them.
+---
+### Different parties call RPCs their own way:
+- Clients call server RPCs by **sending an RPC request to the server**, since there's only one endpoint to call RPCs from (the server)
+- The server calls client RPCs by **sending a request to the specific client** it wants to target.
+
+#### Because of this one-sidedness, server RPCs and client RPCs can share the same name.
+---
+#### Example:
+Given a server RPC function called `sum` that adds 2 numbers, and a reply rpc called `sumReply`:
+```js
+// On the client...
+net_rpc_register("sumReply", function (data)
+{
+  trace(data) // Server reply
+})
+
+// "true" since we want to call this RPC reliably.
+net_rpc_call("sum", true, 1, 1) // we send 2 arguments: 1, and 1
+
+// On the server...
+net_register_rpc("sum", function (caller_id, a, b)
+{
+  // The id of the caller is also passed in now
+  net_rpc_call("sumReply", caller_id, true, a + b) // We send back our reply with one parameter passed: a + b
+})
+```
+> NOTE: **sumReply can also just be named sum**, but I've given it a different name to make a clear **distinction between client -> server and server -> client**.
+
+The following networking requests will happen:
+```
+Client 0 (RPC Call "sum") ➡ Server
+-- RPC runs on server --
+Server (RPC Call)         ➡ Client 0
+-- RPC runs on client --
+```

@@ -28,9 +28,9 @@ This is required for anything modding-wise.
 
 It contains all of the code, sprites and the rest of everything.
 
-##### This is what you put inside of the server's `mod/` folder.
+##### This is what you put inside of the server's `mods/` folder.
 
-**In addition,** if your mod contains any server code, an additional file appended with the `_server` suffix will appear, this is your server mod file, **which you also drag into the `mod` folder**. **This contains your mod's server-side code.**
+**In addition,** if your mod contains any server code, an additional file appended with the `_server` suffix will appear, this is your server mod file, **which you also drag into the `mods` folder**. **This contains your mod's server-side code.**
 
 ## And to begin?
 # Before jumping in, read the actual text before this, you won't regret it.

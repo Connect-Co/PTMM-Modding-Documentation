@@ -4,7 +4,7 @@ Writing server-side code is a bit of a different story.
 
 First of all, you can't simply use `with(obj_something)` to access data, that's not how it works.
 
-Server mods don't run in-engine, which means that there aren't any built-in variables, or any sort of notion of rooms, or instances, or anything (although the server still has some form of room data, and knows whats in them, which player is where, etc).
+Server mods don't run in-engine, which means that there aren't any built-in variables, or any sort of notion of rooms, or instances, or anything (although the server still has some form of room data, and knows what's in them, which player is where, etc).
 
 You interact with the players through network requests.
 

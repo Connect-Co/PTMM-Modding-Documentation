@@ -49,7 +49,7 @@ if (condition)
 { /* ⬅ Scope begin */
   
 
-  // ❗ You can do this if you wan't to do some one-off computation without polluting the current scope with some useless variables.
+  // ❗ You can do this if you want to do some one-off computation without polluting the current scope with some useless variables.
   var a = 1, b = 2, c = 3
   trace(a * b + c)
 
