@@ -1,4 +1,13 @@
+
+<div style="text-align: center; display: flex; ">
+
+![Illustration](docstop.png "Alt")
 # Pizza Tower: Multi Mayhem Modding Documentation
+
+</div>
+
+---
+
 > This is the documentation for PT:MM's mod loader.
 #### By the way, for questions, you can join the discord and ask me questions directly. Just make it manageable, please, and try reading this atleast.
 ## Essential information
