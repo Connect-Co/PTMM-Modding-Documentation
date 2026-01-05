@@ -212,6 +212,15 @@ for (var i = 0; i < 10; {
 // Exponents
 trace(5**2) // 25
 ```
+# ⚠ THIS MEANS THAT USING SINGLE EQUALS `=` FOR COMPARISONS WILL NOT WORK AS INTENDED!!!
+```js
+a = 2
+if (a = 1) // ❌❌❌❌❌❌❌❌❌ Bad
+{
+  // You will burn in hell if you do this
+  trace("THIS RUNS BECAUSE a = 1 EVALUATES TO 1 (assignment) WHICH IS A TRUTHY VALUE!!")
+}
+```
 #### Missing features
 - Do-while loops (or more like do-until in GML).
 - Try-catch and throw.
