@@ -1,4 +1,4 @@
-# PT: Multi Mayhem Modding Documentation
+# Pizza Tower: Multi Mayhem Modding Documentation
 > This is the documentation for PT:MM's mod loader.
 #### By the way, for questions, you can join the discord and ask me questions directly. Just make it manageable, please, and try reading this atleast.
 ## Essential information
