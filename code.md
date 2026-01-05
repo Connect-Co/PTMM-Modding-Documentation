@@ -165,6 +165,11 @@ Sends an `INFO` chat message, locally visible only.
 
 > Usage: `mod_chat_info("Did you know? Your game will blow up instantly")`<br>Returns: Nothing
 
+## `draw_sprite_hover(sprite, subimg, xx, yy, dodraw = true)`
+Draws a sprite, and returns `true` if it is being hovered (relative to screen coordinates).
+If `dodraw` is disabled, only the check will be performed, and no actual sprite will be drawn.
+
+> Usage: `draw_sprite_hover(spr_button, 0, 0, 0)`<br>Returns: Nothing
 
 # Rooms
 You can always create rooms via the `config.dev.json`, but if you want to make them procedurally, or through code, I can't blame you.
@@ -195,3 +200,20 @@ Assigns a static id to said instance. A **static id is a unique network id, that
 `room_goto` but accounts for custom rooms.
 
 > Usage: `room_goto_mod(rm_awesome)`<br>Returns: Nothing
+
+# Input
+
+## `online_ui_scroll()`
+Returns a scroll factor (supports controller input). 
+
+> Usage: `online_ui_scroll()`<br>Returns: -1, 1 or 0
+
+## `online_ui_left_button(hold = false)`
+Checks if the left mouse button is being pressed. If `held` is true, will check if it's being held.
+
+> Usage: `online_ui_left_button()`<br>Returns: boolean
+
+## `online_ui_right_button()`
+Checks if the left mouse button is being pressed.
+
+> Usage: `online_ui_right_button()`<br>Returns: boolean
