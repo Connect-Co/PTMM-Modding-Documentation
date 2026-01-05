@@ -110,7 +110,6 @@ my_cool_func(); // ✅ PML is amazing, isn't it? This just works.
 ```
 #### However, it is essential to note that it _literally_ remembers the scope it has been **created from**, in a **literal sense**! This means...
 ```js
-var data = 1
 function func()
 {
   trace(vsp)
