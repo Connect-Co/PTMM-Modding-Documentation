@@ -209,11 +209,11 @@ Returns a scroll factor. If using a controller, it returns a raw value from the 
 > Usage: `online_ui_scroll()`<br>Returns: Range from -1 to 1
 
 ## `online_ui_left_button(hold = false)`
-Checks if the left mouse button is being pressed. If `held` is true, will check if it's being held.
+Checks if the left mouse button is being pressed. If `held` is true, will check if it's being held (supports controller input). 
 
 > Usage: `online_ui_left_button()`<br>Returns: boolean
 
 ## `online_ui_right_button()`
-Checks if the left mouse button is being pressed.
+Checks if the left mouse button is being pressed (supports controller input). 
 
 > Usage: `online_ui_right_button()`<br>Returns: boolean
