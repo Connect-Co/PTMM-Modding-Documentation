@@ -204,9 +204,9 @@ Assigns a static id to said instance. A **static id is a unique network id, that
 # Input
 
 ## `online_ui_scroll()`
-Returns a scroll factor (supports controller input). 
+Returns a scroll factor. If using a controller, it returns a raw value from the right stick from -1 to 1. 
 
-> Usage: `online_ui_scroll()`<br>Returns: -1, 1 or 0
+> Usage: `online_ui_scroll()`<br>Returns: Range from -1 to 1
 
 ## `online_ui_left_button(hold = false)`
 Checks if the left mouse button is being pressed. If `held` is true, will check if it's being held.
