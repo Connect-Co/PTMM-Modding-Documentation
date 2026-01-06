@@ -45,7 +45,7 @@ The fact that they're fired-and-forgotten is what makes them so unbelievably qui
 #### Picture this:
 We want to send _unreliable packets_ $A$, $B$ and $C$.
 
-$A$ gets lost and dies in a ditch.
+$A$ gets lost and is shot dead in the Bronx.
 $C$ arrives before $B$ and get processed out of order.
 
 However, no waiting occurs, they get sent at the speed of the network.
