@@ -48,3 +48,10 @@ It contains all of the code, sprites and the rest of everything.
 > [Code (client side)](code.md)
 
 > [Code (server side)](code_server.md)
+
+> [Adding custom characters](char.md)
+
+> [Implementing a mod config menu](modconfig.md)
+
+> [Adding a small game to the computer](modgame.md)
+
