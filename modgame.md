@@ -106,15 +106,12 @@ function(s) { with (s) {
                 }
             }
         }
+        up = false
+        down = false
+        left = false
+        right = false
         
-    } else if (time%4==1)
-    {
-        up = key_up2
-        down = key_down2
-        left = abs(key_left2)
-        right = abs(key_right2)
-    } else
-    {
+    } else {
         if (!up) up = key_up2
         if (!down) down = key_down2
         if (!left) left = abs(key_left2)
