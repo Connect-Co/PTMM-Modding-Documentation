@@ -30,9 +30,10 @@ Each mod can create options to customize their mod to each player's content. The
 - `function` (function(value)): A function called when the option's value is changed. `value` is the current value of the option as an index in `options`. This function can be used to change other variables or call other functions based on the new value.
 - **Returns: undefined**
 
-`mod_config_add_input(name, default)`
+`mod_config_add_input(name, default, softlock = 0)`
 - `name` (string): The name of the option.
 - `default` (array\[tdp_input_action\]): The default tdp_input_action array of the option.
+- `softlock` (integer): Whether it could cause a softlock if the player has no access to this input. This will give the same binding protections as menu inputs. Inputs will only notice inputs of the same softlock integer.
 - **Returns: The tdp_input_key for this option**
 
 ### Mod Credits
