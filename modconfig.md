@@ -33,7 +33,7 @@ Each mod can create options to customize their mod to each player's content. The
 `mod_config_add_input(name, default, softlock = 0)`
 - `name` (string): The name of the option.
 - `default` (array\[tdp_input_action\]): The default tdp_input_action array of the option.
-- `softlock` (integer): Whether it could cause a softlock if the player has no access to this input. This will give the same binding protections as menu inputs. Inputs will only notice inputs of the same softlock integer.
+- `softlock` (integer): Whether it could cause a softlock if the input isn't properly bound. This will give the same binding protections as menu inputs. Inputs will only notice inputs of the same softlock integer.
 - **Returns: The tdp_input_key for this option**
 
 ### Mod Credits
