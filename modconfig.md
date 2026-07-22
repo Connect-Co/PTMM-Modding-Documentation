@@ -32,7 +32,7 @@ Each mod can create options to customize their mod to each player's content. The
 
 `mod_config_add_input(name, default)`
 - `name` (string): The name of the option.
-- `default` (boolean): The default tdp_input_action array of the option.
+- `default` (array\[tdp_input_action\]): The default tdp_input_action array of the option.
 - **Returns: The tdp_input_key for this option**
 
 ### Mod Credits
