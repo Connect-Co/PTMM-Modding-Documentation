@@ -30,6 +30,11 @@ Each mod can create options to customize their mod to each player's content. The
 - `function` (function(value)): A function called when the option's value is changed. `value` is the current value of the option as an index in `options`. This function can be used to change other variables or call other functions based on the new value.
 - **Returns: undefined**
 
+`mod_config_add_input(name, default)`
+- `name` (string): The name of the option.
+- `default` (boolean): The default tdp_input_action array of the option.
+- **Returns: The tdp_input_key for this option**
+
 ### Mod Credits
 These functions basically work the same as the mod config functions but it's in its own category because
 
